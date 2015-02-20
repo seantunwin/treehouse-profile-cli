@@ -1,3 +1,7 @@
+/**
+ * Using Node.js, get teamtreehouse.com users' badges and points by topic
+ **/
+
 'use strict';
 
 /************************************
