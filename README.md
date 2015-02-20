@@ -22,5 +22,5 @@ $ npm install
 ## Usage
 
 ```
-$ node app.js [Topic:String] [User(s): Array (space separated)]
+$ node app.js [Topic:String (case-sensitive)] [User(s): Array (space separated)]
 ```
