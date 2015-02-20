@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seantunwin/treehouse-profile-cli.git"
+    "url": "git://github.com/seantunwin/treehouse-profile-cli.git"
   },
   "author": {
     "name": "Sean T. Unwin",

@@ -6,15 +6,25 @@ Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badge co
 
 ## Install
 
-Grab the repo and `cd` into the root directory
+Create a directory and `cd` into it.
 
-#### Try It Out
+##### Install via NPM
+
+###### linux
+```
+$ npm install --production git://github.com/seantunwin/treehouse-profile-cli.git && mv node_modules/* ./ && rmdir node_modules
+```
+
+###### Windows
 
 ```
-$ npm install --production
+> npm install --production git://github.com/seantunwin/treehouse-profile-cli.git && xcopy node_modules\*  /j /s /i /q /y && rmdir node_modules /s /q
 ```
 
-#### Hack It
+##### Hack on it
+
+`cd` into the `treehouse-profile-cli` directory then:
+
 ```
 $ npm install
 ```
@@ -25,7 +35,7 @@ $ npm install
 $ node app.js <Topic:String (case-sensitive)> <User(s):String || Array (space separated)>
 ```
 
-##### Example
+#### Example
 ```
 $ node app.js JavaScript seantunwin chalkers
 ```
