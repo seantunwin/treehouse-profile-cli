@@ -8,13 +8,19 @@ Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badges a
 
 Grab the repo and `cd` into the root directory
 
-### Try It Out
+#### Try It Out
 
 ```
 npm install --production
 ```
 
-### Hack It
+#### Hack It
 ```
 npm install
+```
+
+## Usage
+
+```
+node app.js [Topic:String] [User(s): Array (space separated)]
 ```
