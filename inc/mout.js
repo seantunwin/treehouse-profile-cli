@@ -19,10 +19,10 @@
 
 
  function printMessage(username, badgeCount, points, subj) {
-     var message = "";
+     var message = '';
 
      // Print user's profile info
-     message = chalk.green(username) + " has " + chalk.cyan(badgeCount) + " total badges and " + chalk.cyan(points) + " points in " + chalk.blue(subj);
+     message = chalk.green(username) + ' has ' + chalk.cyan(badgeCount) + ' total badges and ' + chalk.cyan(points) + ' points in ' + chalk.blue(subj);
      // Send message to be output by error handler in catch block
      console.log(message);
  }

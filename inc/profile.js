@@ -30,9 +30,9 @@ function get(username, subject, numUsers) {
         return false;
     }
     //connect to API URL(http://teamtreehouse.com/username.json)
-    var req = http.get("http://teamtreehouse.com/" + username + ".json", function(response) {
+    var req = http.get('http://teamtreehouse.com/' + username + '.json', function(response) {
         // Response content
-        var body = "";
+        var body = '';
         // Boolean for valid subject
         var isSubject = false;
         // A user's returned profile
@@ -70,7 +70,6 @@ function get(username, subject, numUsers) {
                         unknownSubjectHasPrinted = true;
                         return false;
                     }
-                    console.log('uUL: ', unknownUsers.length);
 
                     if (isSubject && !unknownSubjectHasPrinted) {
                         // Everything has been validated
@@ -88,9 +87,9 @@ function get(username, subject, numUsers) {
                     mout.printError(error);
                 }
 
-                // Username not found
+            // Username not found
             } else {
-                if (username !== "" || username !== 'undefined') {
+                if (username !== '' || username !== 'undefined') {
                     // Add falsey username to array
                     unknownUsers.push(username);
                 }

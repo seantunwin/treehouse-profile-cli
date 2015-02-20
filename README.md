@@ -2,7 +2,7 @@
 
 ## Description
 
-Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badges and points by topic
+Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badges and points by [topic](http://teamtreehouse.com/library).
 
 ## Install
 
@@ -22,5 +22,10 @@ $ npm install
 ## Usage
 
 ```
-$ node app.js [Topic:String (case-sensitive)] [User(s): Array (space separated)]
+$ node app.js <Topic:String (case-sensitive)> <User(s):String || Array (space separated)>
+```
+
+##### Example
+```
+$ node app.js JavaScript seantunwin chalkers
 ```

@@ -66,7 +66,7 @@ gulp.task('lint-js', function() {
         .pipe(plugins.jshint.reporter('jshint-stylish'))
         .pipe(plugins.jsPrettify(prettifyOpts))
         .pipe(gulp.dest('./'))
-        .pipe(plugins.notify('JavaScript has been formatted'));
+        .pipe(plugins.notify('JavaScript has been linted'));
 });
 
 // Format JS
@@ -78,29 +78,9 @@ gulp.task('pretty-js', function() {
                 this.emit('end');
             }
         }))
-    // .pipe(plugins.del(['./app.js', './inc/*.js']))
     .pipe(plugins.jsPrettify(prettifyOpts))
         .pipe(gulp.dest('./'))
         .pipe(plugins.notify('JavaScript has been formatted'));
-});
-
-// Minify and gzip JS
-gulp.task('min-js', function() {
-    return gulp.src(src)
-        .pipe(plugins.plumber({
-            errorHandler: function(error) {
-                console.log(error.message);
-                this.emit('end');
-            }
-        }))
-        .pipe(plugins.uglify({
-            "mangle": false
-        }))
-        .pipe(plugins.rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest('./'))
-        .pipe(plugins.notify('JavaScript has been minified'));
 });
 
 
