@@ -1,0 +1,44 @@
+{
+  "name": "treehouse-profile-node",
+  "version": "0.0.1",
+  "description": "Using Node.js, get teamtreehouse.com users' badges and points by subject",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seantunwin/treehouse-profile-node.git"
+  },
+  "author": {
+    "name": "Sean T. Unwin",
+    "email": "seantunwin@gmail.com",
+    "url": "https://seanunwin.ca"
+  },
+  "engines": {
+    "node": ">=0.10.2"
+  },
+  "files": [
+    "app.js",
+    "inc/mout.js",
+    "inc/profile.js"
+  ],
+  "keywords": [
+    "node",
+    "javascript",
+    "treehouse",
+    "http",
+    "json"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.1"
+  },
+  "devDependencies": {
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-js-prettify": "^0.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-notify": "^2.0.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
