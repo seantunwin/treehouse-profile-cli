@@ -1,5 +1,5 @@
 /**
- * Using Node.js, get teamtreehouse.com users' badges and points by topic
+ * Using Node.js, get teamtreehouse.com users' badge count and points by topic
  **/
 
 'use strict';

@@ -2,7 +2,7 @@
 
 ## Description
 
-Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badges and points by [topic](http://teamtreehouse.com/library).
+Using Node.js, get [teamtreehouse.com](http://teamtreehouse.com) users' badge count and points by [topic](http://teamtreehouse.com/library).
 
 ## Install
 
