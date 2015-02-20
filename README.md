@@ -11,16 +11,16 @@ Grab the repo and `cd` into the root directory
 #### Try It Out
 
 ```
-npm install --production
+$ npm install --production
 ```
 
 #### Hack It
 ```
-npm install
+$ npm install
 ```
 
 ## Usage
 
 ```
-node app.js [Topic:String] [User(s): Array (space separated)]
+$ node app.js [Topic:String] [User(s): Array (space separated)]
 ```
