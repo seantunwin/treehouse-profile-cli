@@ -40,15 +40,18 @@ function get(username, subject, numUsers) {
         // Array for existing subjects
         var subjectsArr = [];
 
+        // Increase the counter as we iterate through the users array
         counter++;
+
         //Read the data from the response
         response.on('data', function(chunk) {
+            // Accumulate data portions
             body += chunk;
         });
 
         //Parse the data
         response.on('end', function() {
-            // Increase the counter as we iterate through the users array
+            // Data acquired successfully
             if (response.statusCode === 200) {
                 try {
                     // Store the returned profile
@@ -87,7 +90,7 @@ function get(username, subject, numUsers) {
                     mout.printError(error);
                 }
 
-            // Username not found
+                // Username not found
             } else {
                 if (username !== '' || username !== 'undefined') {
                     // Add falsey username to array
