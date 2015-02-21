@@ -1,6 +1,6 @@
 {
   "name": "treehouse-profile-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Using Node.js, get teamtreehouse.com users' badge count and points by topic",
   "license": "MIT",
   "repository": {
