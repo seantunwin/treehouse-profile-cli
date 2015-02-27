@@ -78,9 +78,7 @@ function getFile() {
  *******************************/
 
 // Combine JS tasks (lint and format)
-gulp.task('js', ['js:lint', 'js:pretty'], function() {
-    return getFile();
-});
+gulp.task('js', ['js:lint', 'js:pretty']);
 
 // Lint JS
 gulp.task('js:lint', function() {
