@@ -93,8 +93,6 @@ gulp.task('js:lint', function() {
         }))
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('jshint-stylish'))
-        .pipe(plugins.jsPrettify(prettifyOpts))
-        .pipe(gulp.dest('./'))
         .pipe(plugins.notify('JavaScript has been linted'));
 }); /* End js:lint */
 
